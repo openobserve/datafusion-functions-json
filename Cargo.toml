@@ -11,13 +11,15 @@ repository = "https://github.com/datafusion-contrib/datafusion-functions-json/"
 rust-version = "1.81.0"
 
 [dependencies]
-datafusion = { git = "https://github.com/openobserve/datafusion", rev = "f6b76528ec4a846eab9ee8722276036252b24826" }
+datafusion = { git = "https://github.com/openobserve/datafusion", rev = "5303cc12ac57b6d70c8a0d23c3b8a26ec90d8bf0" }
 jiter = "0.8"
 paste = "1"
 log = "0.4"
 
 [dev-dependencies]
-datafusion = { git = "https://github.com/openobserve/datafusion", rev = "f6b76528ec4a846eab9ee8722276036252b24826", default-features = false, features = ["nested_expressions"] }
+datafusion = { git = "https://github.com/openobserve/datafusion", rev = "5303cc12ac57b6d70c8a0d23c3b8a26ec90d8bf0", default-features = false, features = [
+    "nested_expressions",
+] }
 codspeed-criterion-compat = "2.6"
 criterion = "0.5.1"
 clap = "4"
